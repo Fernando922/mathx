@@ -77,10 +77,11 @@ function ExerciseList() {
   };
 
   const handleGoBack = () => {
-    Alert.alert('Finalizar', 'Deseja realmente voltar para a tela anterior?', [
-      { text: 'Não' },
-      { text: 'SIM', onPress: () => goBack() },
-    ]);
+    Alert.alert(
+      'Finalizar exercício',
+      'Deseja realmente voltar para a tela anterior?',
+      [{ text: 'Não' }, { text: 'SIM', onPress: () => goBack() }],
+    );
     return true;
   };
   useFocusEffect(

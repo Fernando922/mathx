@@ -10,13 +10,13 @@ const SolutionsModal = ({ questions, onPress, operationType }: Props) => {
   const returnQuestionSolution = (question: QuestionType) => {
     switch (operationType) {
       case 'ADD':
-        return question.firstNumber + question.secondNumber;
+        return (question.firstNumber + question.secondNumber).toFixed(2);
       case 'SUB':
         return (question.firstNumber - question.secondNumber).toFixed(2);
       case 'DIV':
         return (question.firstNumber / question.secondNumber).toFixed(1);
       case 'MULT':
-        return question.firstNumber + question.secondNumber;
+        return (question.firstNumber * question.secondNumber).toFixed(2);
     }
   };
 

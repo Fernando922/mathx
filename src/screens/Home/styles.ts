@@ -1,3 +1,4 @@
+import { colors } from '@theme/colors';
 import styled from 'styled-components/native';
 
 export const Title = styled.Text`
@@ -5,6 +6,7 @@ export const Title = styled.Text`
   font-weight: bold;
   align-self: center;
   margin-bottom: 48px;
+  color: ${colors.primary};
 `;
 
 export const CardsContainer = styled.View`
